@@ -8,7 +8,7 @@ var mongoose = require('mongoose');
 var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
 
-mongoose.connect('mongodb+srv://gudusinghchadha:eDdJIivINYPkuQXZ@cluster0.zoiawlt.mongodb.net/registrationFormHeruko?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://gudusinghchadha:eDdJIivINYPkuQXZ@cluster0.zoiawlt.mongodb.net/?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }, (err) => {
