@@ -44,7 +44,7 @@ jobs:
 #           path: '.'
       - name: npm install, build and test
         run: |
-          npm install
+          run npm
           node server.js
       - name: Deploy to GitHub Pages
         id: deployment
