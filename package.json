@@ -1,5 +1,5 @@
 {
-  "name": "creating-registration-and-login-form-in-nodejs-and-mongodb",
+  "name": "creating-registration-and-login-form",
   "version": "1.0.0",
   "description": "This is a user login and registration app using Node.js, Express, Mongoose and express-sessions. ",
   "main": "server.js",
@@ -13,6 +13,8 @@
   },
   "devDependencies": {},
   "scripts": {
+    "predeploy": "npm run build"
+    "deploy"  : "gh-pages -d build"
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
