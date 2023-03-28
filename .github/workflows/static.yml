@@ -29,6 +29,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+        - name: Setup Node.js environment
+          uses: actions/setup-node@v2.5.2
         - name: Install Dependencies
           run: npm install
         - name: npm install, build and test
